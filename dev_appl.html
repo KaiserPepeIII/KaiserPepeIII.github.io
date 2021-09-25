@@ -7,53 +7,115 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <h1>Dev Application Form</h1>
+    <h1 class="header_css">Dev Application Form</h1>
+    <br>
         <!--Form Start-->
-        <form action="" method="">
+        <form action="https://formsubmit.co/hololive.of.iron.dev@protonmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Dev Application">
         <!--Discord Name and Tag-->
             <label for='name'>Discord Name and Tag</label>
-            <input type="text" name="name" id="name" placeholder="Kaiser_Pepe_III#1280">
+            <input type="text" name="name" id="name" placeholder="Kaiser_Pepe_III#1280" required>
             <br>
             <br>
-            <br>
-
-        <!--Reason for Joining Team-->
-            <label for="join_reasons">What are you reasons for wanting to join the dev team?</label>
-            <br>
-            <textarea name="join_reasons" id="join_reasons" cols="30" rows="4"></textarea>
+        <!--What is your age-->
+            <label for='age'>What is your age?</label>
+            <input type="text" name="age" id="age" placeholder="18 (must be at least 15)" required>
             <br>
             <br>
+        <!--Employment Status-->
+            <p>Are you enrolled in education/employment/training?</p>
+            <select name="e_status" id="">
+                <option value="education">Education</option>
+                <option value="employment">Employment</option>
+                <option value="training">Training</option>
+                <option value="none_above">None of the Above</option>
+            </select>
+            <br>
+            <br>
+        <!--Employment Status cont-->
+        <p>If you selected employment/education/training, from which hours are you available from and in which timezone?</p>
+            <textarea name="employment_cont" id="employment_cont" cols="50" rows="2"></textarea>
+        <br>
+        <br>
 
         <!--Which position are you applying for-->
         <p>Which position would you like to apply for?</p>
-        <input type="radio" name="position" value = "programmer"id="">Programmer
-        <input type="radio" name="position" value = "gfx"id="">GFX Artist
-        <input type="radio" name="position" value = "researcher"id="">Researcher
+        <ul>
+            <input type="radio" name="position" value = "programmer"id="">Programmer
+            <input type="radio" name="position" value = "gfx"id="">GFX Artist
+            <input type="radio" name="position" value = "researcher"id="">Researcher
+        </ul>
+        <br>
+        <br>
+        <!--Experience Time-->
+        <p>If you selected programmer or GFX artist in the previous question, how much experience do you have in that field?</p>
+        <textarea name="experience_time" id="experience_time" cols="30" rows="2"></textarea>
+        <br>
         <br>
 
-        <!--Who is your fav oshi-->
-        <p>Who is your favourite HoloMember?</p>
-        <select name="oshi" id="">
-            <option value="subaru">Oozora Subaru</option>
-            <option value="ayame">Nakiri Ayame</option>
-            <option value="yagoo">Yagoo</option>
-            <option value="pekora">Usada Pekora</option>
-            <option value="towa">Tokoyami Towa</option>
-            <option value="moona">Moona Hoshinova</option>
-        </select>
+        <div class="researcher_questions">
+        <h2>The next 4 questions are to do with the researcher role, click <a href="#experience_pdx">here</a>if you wish to move to the next related questions</h2>
         <br>
+        <br>
+        <!--If you picked researcher, irl information-->
+        <p>If you picked researcher previously, how do you intend to find real life information which we could use in the mod?
+        </p>
+        <textarea name="researcher_info" id="researcher_info" cols="40" rows="3"></textarea>
+        <br>
+        <br>
+        <!--If you picked researcher, vtuber information-->
+        <p>If you picked researcher previously, who are the vtubers you watch the most?
+        </p>
+        <textarea name="researcher_vtuber" id="researcher_vtuber" cols="40" rows="3"></textarea>
+        <br>
+        <br>
+        <!--If you picked researcher, vt-->
+        <p>If you picked researcher previously, how often do you browse r/hololive or /vt/?
+        </p>
+        <textarea name="researcher_vt" id="researcher_vt" cols="40" rows="3"></textarea>
+        <br>
+        <br>
+        <!--If you picked researcher, writing-->
+        <p>If you picked researcher previously, how would you describe your writing skills? (state any former experience in the field)
+        </p>
+        <textarea name="researcher_writing" id="researcher_writing" cols="40" rows="3"></textarea>
+        <br>
+        <br>
+        <h3><em>Questions related to researchers stop here</em></h3>
+    </div>
+
+        <br>
+        <br>
+        <!--Experience in PDX-->
+        <p id="experience_pdx">Do you have any experience with modding Paradox Games? If yes, how long have you been modding for and for which games?</p>
+        <input type="radio" name="experience" value="Yes" id="">Yes
+        <input type="radio" name="experience" value="No" id="">No
+        <br>
+            <textarea name="experience_cont" id="experience_cont" cols="30" rows="1"></textarea>
+        <br>
+        <br>
+        <!--Reason for Joining Team-->
+        <label for="join_reasons">What are you reasons for wanting to join the dev team?</label>
+        <br>
+        <textarea name="join_reasons" id="join_reasons" cols="30" rows="4" required></textarea>
+        <br>
+        <br>
+        <!--Long Term Goals-->
+        <label for="long_term">What are you the long term goals you wish to achieve within the mod during its development?</label>
+        <br>
+        <textarea name="long_term" id="long_term" cols="30" rows="4" required></textarea>
+        <br>
+        <br>
+
         <!--Are you sure you want to join-->
             <p>Are you sure you want to join?</p>
             <input type="checkbox" name="confirmation" value = "certain"id="">Yes, I am sure
             <br>
             <br>
-            <button type="submit">Submit</button>
+            <button type="submit">Submit required</button>
         </form>
 
     <!--Back to Homepage Link-->
-    <br>
-    <br>
-    <br>
     <br>
     <br>
     <a href="/index.html">Back to Homepage</a>

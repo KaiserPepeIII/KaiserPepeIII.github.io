@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 2;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.common {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+.centre_text {
+  color: aliceblue;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+.img_centre {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: 99.1vw;
+  background: linear-gradient(#012e50, #86bbd8);
+}
+.portal_select {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  background: url(/images/win_header_short_right.png);
+  opacity: 0.75;
+  height: 6.25vh;
+  width: auto;
+}
+.portal_select:hover {
+  opacity: 0.95;
+  transition-duration: 0.3s;
+}
+#current_devs_portal {
+  color: aliceblue;
+  content: "About Us";
+  text-decoration: none;
+  font-size: 50px;
+}
+#current_devs_portal:after {
+  color: aliceblue;
+  content: "About Us";
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+#roadmap_portal {
+  color: aliceblue;
+  content: "Current Roadmap and Dev Diaries";
+  text-decoration: none;
+  font-size: 50px;
+}
+#roadmap_portal:after {
+  color: aliceblue;
+  content: "Current Roadmap and Dev Diaries";
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+#lore_portal {
+  color: aliceblue;
+  content: "Lore Portal";
+  text-decoration: none;
+  font-size: 50px;
+}
+#lore_portal:after {
+  color: aliceblue;
+  content: "Lore Portal";
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+#dev_application_portal {
+  color: aliceblue;
+  content: "Dev Application";
+  text-decoration: none;
+  font-size: 50px;
+}
+#dev_application_portal:after {
+  color: aliceblue;
+  content: "Dev Application";
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 50px;
+}
+#contact_portal {
+  color: aliceblue;
+  content: "Contact Us";
+  text-decoration: none;
+  font-size: 50px;
+}
+#contact_portal:after {
+  color: aliceblue;
+  content: "Contact Us";
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+#additional_portal {
+  color: aliceblue;
+  content: "Additional Links";
+  text-decoration: none;
+  font-size: 50px;
+}
+#additional_portal:after {
+  color: aliceblue;
+  content: "Additional Links";
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+#dev_portal {
+  color: aliceblue;
+  content: "Dev Portal";
+  text-decoration: none;
+  font-size: 50px;
+}
+#dev_portal:after {
+  color: aliceblue;
+  content: "Dev Portal";
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 50px;
+}
+#index {
+  padding: 5px 30px;
+  background: #33658a;
+}
+#index_list {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #86bbd8;
+}
+.header_css {
+  padding: 5px 30px;
+  background: #33658a;
+}
+body {
+  background: lightblue;
+  padding-top: 0px;
+}
+.translator {
+  text-decoration: overline;
+}
+#navbar {
+  background: #2f4858;
+  height: auto;
+  width: auto;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2.4rem;
+}
+#current_devs {
+  width: auto;
+}
+#main_banner {
+  background-color: #33658a;
+  background-image: url(images/big_map_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: black;
+  display: block;
+  width: auto;
+  height: 71vh;
+}
+.langue {
+  color: maroon;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#dev_ony_header {
+  color: blue;
+}
+#lead_dev {
+  color: blueviolet;
+}
+/* css rule */
+/* selectors */
+/* declaration */

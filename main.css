@@ -1,8 +1,14 @@
 * {
   margin: 0;
-  padding: 2;
+  padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  margin: 3;
+}
+form {
+  margin-left: 5px;
 }
 .common {
   padding-top: 5px;
@@ -139,7 +145,7 @@
   font-size: 50px;
 }
 .researcher_questions {
-  background-color: silver;
+  background: silver;
 }
 #index {
   padding: 5px 30px;
@@ -162,7 +168,7 @@ body {
 .translator {
   text-decoration: overline;
 }
-#navbar {
+.navbar {
   background: #2f4858;
   height: auto;
   width: auto;

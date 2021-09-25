@@ -7,28 +7,33 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <h1>Contact Us</h1>
-    <!--Name-->
-    <label for="olname">Name</label>
-    <input type="olname" name="olname" id="olname" placeholder="John Doe">
+    <h1 class="header_css">Contact Us</h1>
+    <br>
+    <form action="b5956464d933ab23ccfbd5852daca0ea" method="POST">
+        <input type="hidden" name="_subject" value="New HLOI Email">
+        <!--Name-->
+        <label for="olname">Name</label>
+        <input type="olname" name="olname" id="olname" placeholder="John Doe" required>
+        <br>
+        <br>
+        <!--Email-->
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required>
+        <br>
+        <br>
+        <!--Contact Reason-->
+            <label for="contact_reason">Reason for Contact</label>
+            <br>
+            <textarea name="contact_reason" id="contact_reason" cols="15" rows="5"></textarea required>
+                <br>
+                <br>
+        <button type="submit">Send</button>
+        <!--Thank you send-->
+        <input type="hidden" name="_next" value="./thanks.html">
+    </form>
     <br>
     <br>
-    <!--Email-->
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
-    <br>
-    <br>
-    <!--Reasons for Contact-->
-    <label for="contact_reason">Reason for Contact</label>
-    <br>
-    <textarea name="contact_reason" id="contact_reason" cols="15" rows="5"></textarea>
-    <!--Submit-->
-    <br>
-    <br>
-    <button type="submit">Submit</button>
-    <!--Back to Homepage Link-->
-    <br>
-    <br>
+    <!--Back to Homepage-->
     <a href="/index.html">Back to Homepage</a>
 </body>
 </html>
